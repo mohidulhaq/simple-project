@@ -16,6 +16,11 @@
                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                 Contact Us
             </a>
+            <div class="sb-sidenav-menu-heading">Task Management</div>
+            <a class="nav-link" href="{{ route('task.create') }}">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-list-check"></i></div>
+                Create Task
+            </a>
         </div>
     </div>
     <div class="sb-sidenav-footer">
