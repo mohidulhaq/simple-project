@@ -7,7 +7,11 @@
                 Dashboard
             </a>
             
-            <div class="sb-sidenav-menu-heading">Addons</div>
+            <div class="sb-sidenav-menu-heading">Other pages</div>
+            <a class="nav-link" href="{{ route('front.about') }}">
+                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                About Us
+            </a>
             <a class="nav-link" href="{{ route('front.contact') }}">
                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                 Contact Us
