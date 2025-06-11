@@ -14,6 +14,10 @@ class TaskController extends Controller
     public function index()
     {
         //
+        // $tasks = Task::all();
+        $tasks = Task::with('user')->get();
+        dd($tasks);
+        return view('modules.task.index',compact('tasks'));
     }
 
     /**
@@ -22,8 +26,8 @@ class TaskController extends Controller
     public function create()
     {
         $users = User::pluck('name','id');
-        dd($users);
-        return view('modules.task.create');
+        // dd($users);
+        return view('modules.task.create',compact('users'));
     }
 
     /**
@@ -32,6 +36,13 @@ class TaskController extends Controller
     public function store(Request $request)
     {
         //
+        // $this->validate($request,[
+        //     'title' => 'required'
+        // ]);
+        // dd($request->all());
+        Task::create($request->all());
+        
+        return redirect()->route('task.index');
     }
 
     /**

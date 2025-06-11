@@ -17,6 +17,10 @@
                 Contact Us
             </a>
             <div class="sb-sidenav-menu-heading">Task Management</div>
+            <a class="nav-link" href="{{ route('task.index') }}">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-list-check"></i></div>
+                All Task
+            </a>
             <a class="nav-link" href="{{ route('task.create') }}">
                 <div class="sb-nav-link-icon"><i class="fa-solid fa-list-check"></i></div>
                 Create Task
